@@ -7,9 +7,15 @@
 </head>
 <body>  
     <h1>Markdown Editor</h1>
+    <header>
+        <h2>Markdown</h2>
+        <h2>Preview</h2>
+    </header>
     <main>
         <div class="editor">
-            <textarea id="sourceTA" rows="10" cols="82"></textarea>
+            <div class="text">
+                <textarea id="sourceTA"></textarea>
+            </div>
             <button id="runBtn" onClick="run()">Convert</button>
         </div>
         <div class="results">

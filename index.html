@@ -3,15 +3,20 @@
 <head>
   <meta charset="UTF-8"/>
   <link rel="stylesheet" href="style.css"/>
+  <title>Markdown Editor</title>
 </head>
-<body>
-
-  <textarea id="sourceTA" rows="10" cols="82"></textarea>
-  <hr/>
-  <button id="runBtn" onClick="run()">Convert</button>
-  <hr/>
-  <div id="targetDiv"></div>
-  <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js"></script>
-  <script src="script.js"></script>
+<body>  
+    <h1>Markdown Editor</h1>
+    <main>
+        <div class="editor">
+            <textarea id="sourceTA" rows="10" cols="82"></textarea>
+            <button id="runBtn" onClick="run()">Convert</button>
+        </div>
+        <div class="results">
+            <div id="targetDiv"></div>
+        </div>    
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
